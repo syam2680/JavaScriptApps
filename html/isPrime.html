@@ -1,0 +1,44 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<html lang="en">
+<head>
+  <title>is Prime : Check if the given number is prime</title>
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+
+
+
+function runIsPrime(){
+  var num = document.getElementById("number").value;
+  var st = isPrime(num);
+  if(st){
+    document.getElementById("output").value=num + " is Prime";
+  }else{
+    document.getElementById("output").value=num + " is Not a Prime";
+  }
+}
+
+
+
+  </script>
+</head>
+<body>
+is Prime : Check if the given number is prime<br />
+
+  <form>
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input class="form-control" id="number" type="text" />
+    </div>
+<div class="form-group">
+      <label for="output">Result:</label>
+      <input class="form-control" id="output" readonly="" type="text" />
+    </div>
+<button class="btn btn-success" onclick="runIsPrime();" type="button">Is Prime ?</button>
+
+  </form>
+</body>
+</html></div>

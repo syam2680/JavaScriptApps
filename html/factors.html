@@ -1,0 +1,39 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<html lang="en">
+<head>
+  <title>Factor : List out the factors of the input number</title>
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+
+
+function runfactor(){
+  var num = document.getElementById("number").value;
+  var f = factor(num);
+  document.getElementById("output").value=JSON.stringify(f);
+}
+
+
+
+  </script>
+</head>
+<body>
+  Factors : Factor the input number and prints the factor along with the number of times it occurs in factorization.<br />
+
+  <form>
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input class="form-control" id="number" type="text" />
+    </div>
+<div class="form-group">
+      <label for="output">Result:</label>
+      <input class="form-control" id="output" readonly="" type="text" />
+    </div>
+<button class="btn btn-success" onclick="runfactor();" type="button">Factors</button>
+
+  </form>
+</body>
+</html></div>
