@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <title>Java Script Apps</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="statisticsLib.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Java Script Apps</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="isPrime.html">Number Theory</a></li>
+      <li><a href="mode.html">Statistics</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="row">
+<div class="col-sm-2" >
+  <ul class="nav">
+    <li class="nav-header">Statistics</li>
+    
+      <li><a href=median.html>Median of Ungrouped Data</a></li>
+   
+      <li><a href=mode.html>Mode of Ungrouped Data</a></li>
+   
+      <li><a href=mean.html>Mean of Ungrouped Data</a></li>
+   
+  </ul>
+</div>
+<div class="col-sm-6" >
+  <p>Function : Median</p>
+  <p>Description : Return the Median of Ungrouped Data</p>
+  <p>Background : The Median is the data item which occurs in the middle of a sort data set.</p>
+<br />
+  <form>
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input class="form-control" id="number" type="text" />
+    </div>
+<div class="form-group">
+      <label for="output">Result:</label>
+      <textarea class="form-control" id="output" readonly="" ></textarea>
+    </div>
+<button class="btn btn-success" onclick="FindMedian();" type="button">Calculate Median</button>
+</div>
+  </form>
+</body>
+</html>

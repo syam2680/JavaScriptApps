@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <title><TMPL_VAR NAME=TITLE></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="<TMPL_VAR NAME=JS>"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><TMPL_VAR NAME=NAV_BAR_TITLE></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="isPrime.html">Number Theory</a></li>
+      <li><a href="mode.html">Statistics</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="row">
+<div class="col-sm-2" >
+  <ul class="nav">
+    <li class="nav-header"><TMPL_VAR NAME=NAV_BAR_HEADER></li>
+    <TMPL_LOOP NAME=PAGES>
+      <li><a href=<TMPL_VAR NAME=PAGE_NAME>><TMPL_VAR NAME=PAGE_DISPLAY_NAME></a></li>
+   </TMPL_LOOP>
+  </ul>
+</div>
+<div class="col-sm-6" >
+  <p><TMPL_VAR NAME=FUNCTION></p>
+  <p><TMPL_VAR NAME=DESCRIPTION></p>
+  <p><TMPL_VAR NAME=BACKGROUND></p>
+<br />
+  <form>
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input class="form-control" id="number" type="text" />
+    </div>
+<div class="form-group">
+      <label for="output">Result:</label>
+      <textarea class="form-control" id="output" readonly="" ></textarea>
+    </div>
+<button class="btn btn-success" onclick="<TMPL_VAR NAME=JS_FUNCTION>" type="button"><TMPL_VAR NAME=BUTTON_TEXT></button>
+</div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+  "isPrime": {
+    "TEMPLATE": "function_template.tmpl",
+    "PARAMS": {
+      "JS": "numberThoeryLib.js",
+      "TITLE": "Java Script Apps",
+      "NAV_BAR_TITLE": "Java Script Apps",
+      "NAV_BAR_HEADER": "Number Theory",
+      "PAGES": [
+        {
+          "PAGE_NAME": "isPrime.html",
+          "PAGE_DISPLAY_NAME": "is Prime"
+        }
+      ],
+      "FUNCTION": "Function : is Prime",
+      "DESCRIPTION": "Description : Checks if the given input is a prime number.",
+      "BACKGROUND": "Background : A number whose factors are 1 and itself is a Prime Number",
+      "JS_FUNCTION": "runIsPrime();",
+      "BUTTON_TEXT": "Is Prime ?"
+    }
+  },
+  "factors": {
+    "TEMPLATE": "function_template.tmpl",
+    "PARAMS": {
+      "JS": "numberThoeryLib.js",
+      "TITLE": "Java Script Apps",
+      "NAV_BAR_TITLE": "Java Script Apps",
+      "NAV_BAR_HEADER": "Number Theory",
+      "PAGES": [
+        {
+          "PAGE_NAME": "factors.html",
+          "PAGE_DISPLAY_NAME": "Factors"
+        }
+      ],
+      "FUNCTION": "Function : Factor",
+      "DESCRIPTION": "Description : Lists the prime factors of the input number",
+      "BACKGROUND": "Background : A prime factor of an integer is a prime number that divides the integer exactly",
+      "JS_FUNCTION": "runFactor();",
+      "BUTTON_TEXT": "Factors"
+    }
+  },
+  "divisors": {
+    "TEMPLATE": "function_template.tmpl",
+    "PARAMS": {
+      "JS": "numberThoeryLib.js",
+      "TITLE": "Java Script Apps",
+      "NAV_BAR_TITLE": "Java Script Apps",
+      "NAV_BAR_HEADER": "Number Theory",
+      "PAGES": [
+        {
+          "PAGE_NAME": "divisors.html",
+          "PAGE_DISPLAY_NAME": "Divisors"
+        }
+      ],
+      "FUNCTION": "Function : Divisors",
+      "DESCRIPTION": "Description : Lists the divisors of the input number",
+      "BACKGROUND": "Background : A divisor of an integer is a number that divides the integer exactly",
+      "JS_FUNCTION": "runDivisors();",
+      "BUTTON_TEXT": "Divisors"
+    }
+  },
+  "sumOfDivisors": {
+    "TEMPLATE": "function_template.tmpl",
+    "PARAMS": {
+      "JS": "numberThoeryLib.js",
+      "TITLE": "Java Script Apps",
+      "NAV_BAR_TITLE": "Java Script Apps",
+      "NAV_BAR_HEADER": "Number Theory",
+      "PAGES": [
+        {
+          "PAGE_NAME": "sumOfDivisors.html",
+          "PAGE_DISPLAY_NAME": "Sum of Divisors"
+        }
+      ],
+      "FUNCTION": "Function : Sum of Divisors",
+      "DESCRIPTION": "Description : Return the sum of the divisors of the input number",
+      "BACKGROUND": "Background : A divisor of an integer is a number that divides the integer exactly.Sum of divisors is also called as divisor sigma",
+      "JS_FUNCTION": "findDivisorSum();",
+      "BUTTON_TEXT": "Sum of Divisors"
+    }
+  }
+}
