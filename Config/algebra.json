@@ -1,0 +1,29 @@
+{
+  "find_roots": {
+    "TEMPLATE": "algebra_template.tmpl",
+    "PARAMS": {
+      "JS_LIBS" : [
+        {
+          "JS": "numberThoeryLib.js"
+        },
+        {
+          "JS": "algebraLib.js"
+        }
+      ],
+      "TITLE": "Java Script Apps",
+      "NAV_BAR_TITLE": "Java Script Apps",
+      "NAV_BAR_HEADER": "Algebra",
+      "PAGES": [
+        {
+          "PAGE_NAME": "find_roots.html",
+          "PAGE_DISPLAY_NAME": "Find Roots"
+        }
+      ],
+      "FUNCTION": "Function : Find Roots",
+      "DESCRIPTION": "Description : Finds the roots of the quadratic equation.",
+      "BACKGROUND": "Background : Roots are the values where the quadratic equation becomes zero or touches the x axis.",
+      "JS_FUNCTION": "runRoots();",
+      "BUTTON_TEXT": "Find Roots"
+    }
+  }
+}

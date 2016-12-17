@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<TMPL_LOOP NAME=JS_LIBS>
   <script src="<TMPL_VAR NAME=JS>"></script>
+</TMPL_LOOP>
 </head>
 <body>
 <nav class="navbar navbar-default" >
@@ -39,9 +41,20 @@
   <p><TMPL_VAR NAME=BACKGROUND></p>
 <br />
   <form>
-    <div class="form-group">
-      <label for="number">Number:</label>
-      <input class="form-control" id="number"  type="nummber"/>
+    <p>
+     To factor a quadratic eqaution of the form ax^2+bx+c=0 <br>
+     Enter values of a,b and c.
+     <br>Example :
+     <br> If the Equation is 5x^2-13x-14=0
+     <br> Then a = 5, b = -13 , c = -14.
+    </p>
+    <div >
+      <label for="a">a:</label>
+      <input id="a" value="5" type="nummber"/>
+      <label for="b">b:</label>
+      <input id="b" value="-13" type="nummber"/>
+      <label for="c">c:</label>
+      <input id="c" value="-14" type="nummber"/>
     </div>
 <div id="output">
 

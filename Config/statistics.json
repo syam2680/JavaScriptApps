@@ -1,0 +1,62 @@
+{
+  "mode": {
+      "TEMPLATE": "function_template.tmpl",
+      "PARAMS": {
+        "JS": "statisticsLib.js",
+        "TITLE": "Java Script Apps",
+        "NAV_BAR_TITLE": "Java Script Apps",
+        "NAV_BAR_HEADER": "Statistics",
+        "PAGES": [
+          {
+            "PAGE_NAME": "mode.html",
+            "PAGE_DISPLAY_NAME": "Mode of Ungrouped Data"
+          }
+        ],
+        "FUNCTION": "Function : Mode",
+        "DESCRIPTION": "Description : Return the Mode of Ungrouped Data. Example Input : 1,2,3,4,5",
+        "BACKGROUND": "Background : The mode is the data item that occurs most often in a set of data.",
+        "JS_FUNCTION": "FindMode();",
+        "BUTTON_TEXT": "Calculate Mode"
+      }
+    },
+    "mean": {
+        "TEMPLATE": "function_template.tmpl",
+        "PARAMS": {
+          "JS": "statisticsLib.js",
+          "TITLE": "Java Script Apps",
+          "NAV_BAR_TITLE": "Java Script Apps",
+          "NAV_BAR_HEADER": "Statistics",
+          "PAGES": [
+            {
+              "PAGE_NAME": "mean.html",
+              "PAGE_DISPLAY_NAME": "Mean of Ungrouped Data"
+            }
+          ],
+          "FUNCTION": "Function : Mean",
+          "DESCRIPTION": "Description : Return the Mean of Ungrouped Data. Example Input : 1,2,3,4,5",
+          "BACKGROUND": "Background : The mean is the sum of all entries divided by the number of entries in a data set.",
+          "JS_FUNCTION": "FindMean();",
+          "BUTTON_TEXT": "Calculate Mean"
+        }
+      },
+      "median": {
+          "TEMPLATE": "function_template.tmpl",
+          "PARAMS": {
+            "JS": "statisticsLib.js",
+            "TITLE": "Java Script Apps",
+            "NAV_BAR_TITLE": "Java Script Apps",
+            "NAV_BAR_HEADER": "Statistics",
+            "PAGES": [
+              {
+                "PAGE_NAME": "median.html",
+                "PAGE_DISPLAY_NAME": "Median of Ungrouped Data"
+              }
+            ],
+            "FUNCTION": "Function : Median",
+            "DESCRIPTION": "Description : Return the Median of Ungrouped Data. Example Input : 1,2,3,4,5",
+            "BACKGROUND": "Background : The Median is the data item which occurs in the middle of a sorted(arranged in ascending order) data set.",
+            "JS_FUNCTION": "FindMedian();",
+            "BUTTON_TEXT": "Calculate Median"
+          }
+        }
+}

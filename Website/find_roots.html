@@ -1,18 +1,22 @@
 <html lang="en">
 <head>
-  <title><TMPL_VAR NAME=TITLE></title>
+  <title>Java Script Apps</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="<TMPL_VAR NAME=JS>"></script>
+
+  <script src="numberThoeryLib.js"></script>
+
+  <script src="algebraLib.js"></script>
+
 </head>
 <body>
 <nav class="navbar navbar-default" >
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html"><TMPL_VAR NAME=NAV_BAR_TITLE></a>
+      <a class="navbar-brand" href="index.html">Java Script Apps</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="find_roots.html">Algebra</a></li>
@@ -27,28 +31,39 @@
 <div class="row">
 <div class="col-sm-2" >
   <ul class="nav">
-    <li class="nav-header"><TMPL_VAR NAME=NAV_BAR_HEADER></li>
-    <TMPL_LOOP NAME=PAGES>
-      <li><a href=<TMPL_VAR NAME=PAGE_NAME>><TMPL_VAR NAME=PAGE_DISPLAY_NAME></a></li>
-   </TMPL_LOOP>
+    <li class="nav-header">Algebra</li>
+    
+      <li><a href=find_roots.html>Find Roots</a></li>
+   
   </ul>
 </div>
 <div class="col-sm-8" >
-  <p><TMPL_VAR NAME=FUNCTION></p>
-  <p><TMPL_VAR NAME=DESCRIPTION></p>
-  <p><TMPL_VAR NAME=BACKGROUND></p>
+  <p>Function : Find Roots</p>
+  <p>Description : Finds the roots of the quadratic equation.</p>
+  <p>Background : Roots are the values where the quadratic equation becomes zero or touches the x axis.</p>
 <br />
   <form>
-    <div class="form-group">
-      <label for="number">Number:</label>
-      <input class="form-control" id="number"  type="nummber"/>
+    <p>
+     To factor a quadratic eqaution of the form ax^2+bx+c=0 <br>
+     Enter values of a,b and c.
+     <br>Example :
+     <br> If the Equation is 5x^2-13x-14=0
+     <br> Then a = 5, b = -13 , c = -14.
+    </p>
+    <div >
+      <label for="a">a:</label>
+      <input id="a" value="5" type="nummber"/>
+      <label for="b">b:</label>
+      <input id="b" value="-13" type="nummber"/>
+      <label for="c">c:</label>
+      <input id="c" value="-14" type="nummber"/>
     </div>
 <div id="output">
 
 </div>
 </br>
 </br>
-<button class="btn btn-success" onclick="<TMPL_VAR NAME=JS_FUNCTION>" type="button"><TMPL_VAR NAME=BUTTON_TEXT></button>
+<button class="btn btn-success" onclick="runRoots();" type="button">Find Roots</button>
 </div>
   </form>
 </body>

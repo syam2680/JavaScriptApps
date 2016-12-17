@@ -1,0 +1,24 @@
+{
+  "linked_list": {
+    "TEMPLATE": "linkedlist_template.tmpl",
+    "PARAMS": {
+      "JS_LIBS" : [
+        {
+          "JS": "linked_list.js"
+        },
+        {
+          "JS": "vis.js"
+        }
+      ],
+      "TITLE": "Java Script Apps",
+      "NAV_BAR_TITLE": "Java Script Apps",
+      "NAV_BAR_HEADER": "Data Structures",
+      "PAGES": [
+        {
+          "PAGE_NAME": "linked_list.html",
+          "PAGE_DISPLAY_NAME": "Linked List"
+        }
+      ]
+    }
+  }
+}

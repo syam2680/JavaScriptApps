@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="vis.js"></script>
+<script type="text/javascript" src="linked_list.js"></script>
+<link href="vis-network.min.css" rel="stylesheet" type="text/css" />
+<body onload="initialisze();">
+
+<div id="mynetwork"></div>
+<div >
+  <button class="btn btn-success" onclick="runAddtoHead();" type="button">Add Item in the Front : </button>
+  <input id="front"  type="nummber"/><br>
+  <button class="btn btn-success" onclick="runAddtoTail();" type="button">Add Item in the End : </button>
+  <input id="end"  type="nummber"/><br>
+  <button class="btn btn-success" onclick="runAddAfter();" type="button">Add Item After  : </button>
+  <input id="after"  type="nummber"/>Example(1,2 for add 1 after 2.)<br>
+  <button class="btn btn-success" onclick="runAddBefore();" type="button">Add Item Before  : </button>
+  <input id="before"  type="nummber"/>Example(1,2 for add 1 before 2.)<br>
+  <button class="btn btn-success" onclick="runDelete();" type="button">Delete </button>
+  <input id="delete"  type="nummber"/><br>
+  <button class="btn btn-success" onclick="runSearch();" type="button">Search </button>
+  <input id="search"  type="nummber"/><br>
+</div>
+
+
+
+
+</body>
+</html>

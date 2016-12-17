@@ -7,7 +7,7 @@ if(@ARGV!=1){
   exit(0);
 }
 
-my $jsonConfig = json_file_to_perl($ARGV[0]);
+my $jsonConfig = json_file_to_perl("Config/".$ARGV[0]);
 
 my @keysWithPageInfo = keys %{$jsonConfig};
 
@@ -25,7 +25,8 @@ for my $t (@keysWithPageInfo)
 
 for my $function (keys %{$jsonConfig})
 {
-open F , ">$function.html";
+open F , ">Website/$function.html";
+
 
 my $template = HTML::Template->new(filename => $jsonConfig->{$function}->{"TEMPLATE"});
 
@@ -35,18 +36,3 @@ print F $template->output();
 
 close(F);
 }
-
-=head
-JS     => "numberThoeryLib.js",
-TITLE => 'Java Script Apps',
-NAV_BAR_TITLE => 'Java Script Apps',
-PAGES => [
-           {PAGE_NAME => 'Sam', PAGE_DISPLAY_NAME => 'programmer'},
-           {PAGE_NAME => 'Steve', PAGE_DISPLAY_NAME => 'soda jerk'}
-         ],
-FUNCTION => 'FUNCTION : is Prime',
-DESCRIPTION => 'DESCRIPTION : Checks if the given input is a prime number.',
-BACKGROUND => 'BACKGROUND : A number whose factors are 1 and itself is a Prime Number',
-JS_FUNCTION => 'runIsPrime();',
-BUTTON_TEXT => 'Is Prime ?'
-=cut
