@@ -86,7 +86,7 @@ function roots(a,b,c)
         var f1 = new Fraction(det,2*a);
         f1=f1.reduce();
         r1=r1.reduce();
-        elem.innerHTML +=r1["numerator"]+ "/" +r1["denominator"]+ " " ;
+        elem.innerHTML +=r1["numerator"]+ "/" +r1["denominator"]+ " + " ;
         elem.innerHTML += " i ";
         elem.innerHTML +=f1["numerator"]+ "/" +f1["denominator"] + " , ";
         elem.innerHTML +=r1["numerator"]+ "/" +r1["denominator"]+ " " ;
