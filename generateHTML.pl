@@ -25,7 +25,7 @@ for my $t (@keysWithPageInfo)
 
 for my $function (keys %{$jsonConfig})
 {
-open F , ">Website/html/$function.html";
+open F , ">Website/$function.html";
 
 
 my $template = HTML::Template->new(filename => "Templates/".$jsonConfig->{$function}->{"TEMPLATE"});

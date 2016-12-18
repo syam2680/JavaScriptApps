@@ -2,7 +2,7 @@
   "isPrime": {
     "TEMPLATE": "function_template.tmpl",
     "PARAMS": {
-      "JS": "../js/numberThoeryLib.js",
+      "JS": "js/numberThoeryLib.js",
       "TITLE": "Java Script Apps",
       "NAV_BAR_TITLE": "Java Script Apps",
       "NAV_BAR_HEADER": "Number Theory",
@@ -22,7 +22,7 @@
   "factors": {
     "TEMPLATE": "function_template.tmpl",
     "PARAMS": {
-      "JS": "../js/numberThoeryLib.js",
+      "JS": "js/numberThoeryLib.js",
       "TITLE": "Java Script Apps",
       "NAV_BAR_TITLE": "Java Script Apps",
       "NAV_BAR_HEADER": "Number Theory",
@@ -42,7 +42,7 @@
   "divisors": {
     "TEMPLATE": "function_template.tmpl",
     "PARAMS": {
-      "JS": "../js/numberThoeryLib.js",
+      "JS": "js/numberThoeryLib.js",
       "TITLE": "Java Script Apps",
       "NAV_BAR_TITLE": "Java Script Apps",
       "NAV_BAR_HEADER": "Number Theory",
@@ -62,7 +62,7 @@
   "sumOfDivisors": {
     "TEMPLATE": "function_template.tmpl",
     "PARAMS": {
-      "JS": "../js/numberThoeryLib.js",
+      "JS": "js/numberThoeryLib.js",
       "TITLE": "Java Script Apps",
       "NAV_BAR_TITLE": "Java Script Apps",
       "NAV_BAR_HEADER": "Number Theory",
