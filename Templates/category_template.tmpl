@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+
+  <TMPL_INCLUDE NAME="meta.tmpl">
+  <TMPL_INCLUDE NAME="bootstrap.tmpl">
+  <TMPL_INCLUDE NAME="meta.tmpl">
+  <TMPL_INCLUDE NAME="page_views.tmpl">
+  <title><TMPL_VAR NAME=TITLE></title>
+
+
+  <script src="<TMPL_VAR NAME=JS>"></script>
+</head>
+<body background="../img/bgimgjs.png">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><TMPL_VAR NAME=NAV_BAR_TITLE></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="isPrime.html">Number Theory</a></li>
+      <li><a href="mode.html">Statistics</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="row">
+<div class="col-sm-2" >
+  <ul class="nav">
+    <li class="nav-header"><TMPL_VAR NAME=NAV_BAR_HEADER></li>
+    <TMPL_LOOP NAME=PAGES>
+      <li><a href=<TMPL_VAR NAME=PAGE_NAME>><TMPL_VAR NAME=PAGE_DISPLAY_NAME></a></li>
+   </TMPL_LOOP>
+  </ul>
+</div>
+<div class="col-sm-7" >
+  <p><TMPL_VAR NAME=FUNCTION></p>
+  <p><TMPL_VAR NAME=DESCRIPTION></p>
+  <p><TMPL_VAR NAME=BACKGROUND></p>
+<br />
+
+</body>
+</html>

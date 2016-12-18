@@ -2,7 +2,7 @@
   "mode": {
       "TEMPLATE": "function_template.tmpl",
       "PARAMS": {
-        "JS": "statisticsLib.js",
+        "JS": "../js/statisticsLib.js",
         "TITLE": "Java Script Apps",
         "NAV_BAR_TITLE": "Java Script Apps",
         "NAV_BAR_HEADER": "Statistics",
@@ -22,7 +22,7 @@
     "mean": {
         "TEMPLATE": "function_template.tmpl",
         "PARAMS": {
-          "JS": "statisticsLib.js",
+          "JS": "../js/statisticsLib.js",
           "TITLE": "Java Script Apps",
           "NAV_BAR_TITLE": "Java Script Apps",
           "NAV_BAR_HEADER": "Statistics",
@@ -42,7 +42,7 @@
       "median": {
           "TEMPLATE": "function_template.tmpl",
           "PARAMS": {
-            "JS": "statisticsLib.js",
+            "JS": "../js/statisticsLib.js",
             "TITLE": "Java Script Apps",
             "NAV_BAR_TITLE": "Java Script Apps",
             "NAV_BAR_HEADER": "Statistics",

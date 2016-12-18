@@ -4,10 +4,10 @@
     "PARAMS": {
       "JS_LIBS" : [
         {
-          "JS": "linked_list.js"
+          "JS": "../js/linked_list.js"
         },
         {
-          "JS": "vis.js"
+          "JS": "../js/vis.js"
         }
       ],
       "TITLE": "Java Script Apps",

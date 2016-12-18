@@ -12,25 +12,65 @@ function Fraction (numerator,denominator) {
       return new Fraction(numerator,denominator);
     }
     //Addition
-    this.add = function(f1,f2)
+    this.add = function(f)
     {
-      var F1=new Fraction(f1["numerator"],f1["denominator"]);
-      F1=F1.reduce();
-      var F2=new Fraction(f2["numerator"],f2["denominator"]);
-      F2=F2.reduce();
-      var nu = F1["numerator"]*F2["denominator"]+F1["denominator"]*F1["numerator"];
-      var den = F1["denominator"]*F2["denominator"];
-      var F3=new Fraction(nu,den);
-      return F3.reduce();
+      var n = this.numerator*f.denominator+this.denominator*f.numerator;
+      var d = this.denominator*f.denominator;
+      var F=new Fraction(n,d);
+      return F.reduce();
     }
-}
+    //Multiplication
+    this.multiply = function(f)
+    {
+       var n=this.numerator*f.numerator;
+       var d=this.denominator*f.denominator;
+       var F=new Fraction(n,d);
+       return F.reduce();
+    }
+    //Subtraction
+    this.subtract = function(f)
+    {
+      var n = this.numerator*f.denominator-this.denominator*f.numerator;
+      var d = this.denominator*f.denominator;
+      var F=new Fraction(n,d);
+      return F.reduce();
+    }
 
-function Surd(int,surd){
-  //Constructor
-    this.int = int;
-    this.surd = surd;
-}
+    //Power
+    this.power = function(n)
+    {
+      var n = 1;
+      var d = 1;
+      for(var i=0;i<n;i++){
+        n*=this.numerator;
+        d*=this.denominator;
+      }
+      var F=new Fraction(n,d);
+      return F.reduce();
+    }
+    //Is Negative
+    this.isNegative = function()
+    {
+      if(this.numerator<0 || this.denominator<0 && !(this.numerator<0 && this.denominator<0)){
+        return 1;
+      }
+      return 0;
+    }
 
+    //Square Root
+    this.squareRoot = function()
+    {
+      this.reduce();
+      if(!this.isNegative()){
+        var n = new Surd(this.numerator);
+        var d = new Surd(this.denominator);
+        var f=new Fraction(n.rational,d.rational);
+        f.reduce();
+      }
+    }
+
+}
+//GCD
 function gcd(a, b)
 {
   a=Math.abs(a);
@@ -44,6 +84,15 @@ function gcd(a, b)
     }
     return a;
 }
+
+
+function Surd(int,surd){
+  //Constructor
+    this.int = int;
+    this.surd = surd;
+}
+
+
 
 
 function discriminant(a,b,c){

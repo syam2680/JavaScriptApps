@@ -4,10 +4,10 @@
     "PARAMS": {
       "JS_LIBS" : [
         {
-          "JS": "numberThoeryLib.js"
+          "JS": "../js/numberThoeryLib.js"
         },
         {
-          "JS": "algebraLib.js"
+          "JS": "../js/algebraLib.js"
         }
       ],
       "TITLE": "Java Script Apps",

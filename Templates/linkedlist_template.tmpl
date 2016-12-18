@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+  <TMPL_INCLUDE NAME="meta.tmpl">
+  <TMPL_INCLUDE NAME="bootstrap.tmpl">
+  <TMPL_INCLUDE NAME="meta.tmpl">
+  <TMPL_INCLUDE NAME="page_views.tmpl">
+  <title><TMPL_VAR NAME=TITLE></title>
+
+  <style type="text/css">
+  #mynetwork {
+    width: 100%;
+    height: 100px;
+    border: 1px solid lightgray;
+  }
+</style>
+<TMPL_LOOP NAME=JS_LIBS>
+  <script src="<TMPL_VAR NAME=JS>"></script>
+</TMPL_LOOP>
+</head>
+<body onload="initialisze();startUpList();" background="../img/bgimgjs.png">
+<nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><TMPL_VAR NAME=NAV_BAR_TITLE></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="find_roots.html">Algebra</a></li>
+      <li><a href="isPrime.html">Number Theory</a></li>
+      <li><a href="mode.html">Statistics</a></li>
+      <li><a href="linked_list.html">Data Structures</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="row">
+<div class="col-sm-2" >
+  <ul class="nav">
+    <li class="nav-header"><TMPL_VAR NAME=NAV_BAR_HEADER></li>
+    <TMPL_LOOP NAME=PAGES>
+      <li><a href=<TMPL_VAR NAME=PAGE_NAME>><TMPL_VAR NAME=PAGE_DISPLAY_NAME></a></li>
+   </TMPL_LOOP>
+  </ul>
+</div>
+<div class="col-sm-8" >
+<p>
+Linked List is a data structure used for storing a collection of elements.<br>
+Each item has a pointer to the next/previous item. Such Lists are called singly linked lists.
+If each item has a pointer to both previous and the next item, it is a Doubly linked list.
+This post has implemented a few mehtods on a linked list to help you visualise how it looks.
+Use the buttons to add/seach/delete nodes.
+</p>
+<div id="mynetwork">
+</div>
+<form class="form-inline">
+<div class="form-group" >
+  <button class="btn btn-success" onclick="runAddtoHead();" type="button">Add Item in the Front : </button>
+  <input id="front"  type="nummber"/>
+  <button class="btn btn-success" onclick="runAddtoTail();" type="button">Add Item in the End : </button>
+  <input id="end"  type="nummber"/><br>
+  <button class="btn btn-success" onclick="runAddAfter();" type="button">Add Item After  : </button>
+  <input id="after"  type="nummber"/>Example(1,2 for add 1 after 2.)<br>
+  <button class="btn btn-success" onclick="runAddBefore();" type="button">Add Item Before  : </button>
+  <input id="before"  type="nummber"/>Example(1,2 for add 1 before 2.)<br>
+  <button class="btn btn-success" onclick="runDelete();" type="button">Delete </button>
+  <input id="delete"  type="nummber"/><br>
+  <button class="btn btn-success" onclick="runSearch();" type="button">Search </button>
+  <input id="search"  type="nummber"/>
+</div>
+</form>
+</body>
+</html>

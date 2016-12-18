@@ -9,19 +9,7 @@ if(@ARGV!=1){
 
 my $jsonConfig = json_file_to_perl("Config/".$ARGV[0]);
 
-my @keysWithPageInfo = keys %{$jsonConfig};
 
-my $allPages=[];
-
-for my $t (@keysWithPageInfo)
-{
-  push($allPages,$jsonConfig->{$t}->{"PARAMS"}->{"PAGES"}->[0]);
-}
-
-for my $t (@keysWithPageInfo)
-{
-  $jsonConfig->{$t}->{"PARAMS"}->{"PAGES"}=$allPages;
-}
 
 for my $function (keys %{$jsonConfig})
 {
@@ -30,7 +18,7 @@ open F , ">Website/html/$function.html";
 
 my $template = HTML::Template->new(filename => "Templates/".$jsonConfig->{$function}->{"TEMPLATE"});
 
-$template->param($jsonConfig->{$function}->{"PARAMS"});
+$template->param();
 
 print F $template->output();
 

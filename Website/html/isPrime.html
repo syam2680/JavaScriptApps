@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+<link rel="manifest" href="../img/manifest.json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+<link rel="manifest" href="../img/manifest.json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89083372-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+  <title>Java Script Apps</title>
+  <script src="../js/numberThoeryLib.js"></script>
+</head>
+<body background="../img/bgimgjs.png">
+<nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Java Script Apps</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="find_roots.html">Algebra</a></li>
+      <li><a href="isPrime.html">Number Theory</a></li>
+      <li><a href="mode.html">Statistics</a></li>
+      <li><a href="linked_list.html">Data Structures</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="row">
+<div class="col-sm-2" >
+  <ul class="nav">
+    <li class="nav-header">Number Theory</li>
+    
+      <li><a href=sumOfDivisors.html>Sum of Divisors</a></li>
+   
+      <li><a href=factors.html>Factors</a></li>
+   
+      <li><a href=divisors.html>Divisors</a></li>
+   
+      <li><a href=isPrime.html>is Prime</a></li>
+   
+  </ul>
+</div>
+<div class="col-sm-8" >
+  <p>Function : is Prime</p>
+  <p>Description : Checks if the given input is a prime number.</p>
+  <p>Background : A number whose factors are 1 and itself is a Prime Number. As 1 is a trivial factor we are not giving it in the result.</p>
+<br />
+  <form>
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input class="form-control" id="number"  type="nummber"/>
+    </div>
+<div id="output">
+
+</div>
+</br>
+</br>
+<button class="btn btn-success" onclick="runIsPrime();" type="button">Is Prime ?</button>
+</div>
+  </form>
+</body>
+</html>

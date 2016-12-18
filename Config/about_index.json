@@ -1,0 +1,8 @@
+{
+  "about":{
+   "TEMPLATE": "about.tmpl"
+ },
+  "index":{
+   "TEMPLATE": "index.tmpl"
+  }
+}
